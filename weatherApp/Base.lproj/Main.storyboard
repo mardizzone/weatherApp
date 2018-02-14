@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="asansblack.ttf">
+            <string>AovelSans-Black</string>
+        </array>
+        <array key="asansreg.ttf">
+            <string>AovelSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9SB-io-UHL">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2N-7g-nBL">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <fontDescription key="fontDescription" name="AovelSans-Black" family="Aovel Sans" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-ep-MPr">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="few clouds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL9-DJ-4as">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="AovelSans" family="Aovel Sans" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="few clouds" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-mx-qKC">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Cah-mx-qKC" firstAttribute="width" secondItem="eL9-DJ-4as" secondAttribute="width" id="7s7-nX-G1z"/>
+                                            <constraint firstItem="Cah-mx-qKC" firstAttribute="leading" secondItem="eL9-DJ-4as" secondAttribute="trailing" id="P9o-EI-0dz"/>
+                                            <constraint firstItem="Cah-mx-qKC" firstAttribute="leading" secondItem="eL9-DJ-4as" secondAttribute="trailing" id="VZU-TN-T6J"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="68°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b3-pt-uA3">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="447"/>
+                                        <fontDescription key="fontDescription" name="AovelSans" family="Aovel Sans" pointSize="174"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g2N-7g-nBL" firstAttribute="height" secondItem="dd9-ep-MPr" secondAttribute="height" id="WPc-O1-Mg6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9SB-io-UHL" secondAttribute="trailing" id="E16-xr-Ncb"/>
+                            <constraint firstItem="9SB-io-UHL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e0K-5a-lYG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9SB-io-UHL" secondAttribute="bottom" id="fWB-00-fpA"/>
+                            <constraint firstItem="9SB-io-UHL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="nLp-Nx-iHN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="localTemperatureLabel" destination="1b3-pt-uA3" id="Oen-WI-H9r"/>
+                        <outlet property="localWeatherLabel" destination="eL9-DJ-4as" id="f0u-3p-OAv"/>
+                        <outlet property="placeLabel" destination="g2N-7g-nBL" id="bCM-3d-VC1"/>
+                        <outlet property="searchDisplayController" destination="VEl-5V-gBU" id="qNI-sn-ldB"/>
+                        <outlet property="weatherImageView" destination="Cah-mx-qKC" id="1jA-7E-Edf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="VEl-5V-gBU">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="TzA-5x-R9e"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="t3K-kq-BK6"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="7g5-yi-8Zc"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="guf-5o-Oua"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="few clouds" width="50" height="50"/>
+    </resources>
+</document>
